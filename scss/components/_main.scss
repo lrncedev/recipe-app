@@ -1,0 +1,30 @@
+main {
+  .recipes {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: center;
+
+    .recipe {
+      width: 30%;
+      padding: 1rem;
+      border-radius: 8px;
+          background-color: #eee;
+        h2 {
+          margin-bottom: 1rem;
+        }
+        p {
+          padding: .5rem 0;
+        }
+
+        img  {
+          width: 100%;
+          margin-bottom: .5rem;
+        }
+    }
+  }
+}

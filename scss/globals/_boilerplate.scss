@@ -1,0 +1,27 @@
+@use '../util' as u;
+
+// :root {
+//   --main-background: #AB6B00;
+//   --accent-background: #AB6B00;
+//   --text-color: #AB6B00;
+// }
+
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before, 
+*::after {
+  box-sizing: inherit;
+  // outline: 1px solid black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: u.$font-Inter;
+}
