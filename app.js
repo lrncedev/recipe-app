@@ -17,8 +17,6 @@ async function fetchRecipes(query) {
 async function handleSubmit(event) {
   event.preventDefault();
   const el = event.currentTarget;
-  console.log(el);
-  console.log(form.query.value);
   fetchAndDisplay(form.query.value);
 }
 
@@ -27,13 +25,11 @@ async function fetchAndDisplay(query) {
   form.submit.disabled = true;
   // submit the search
   const recipes = await fetchRecipes(query);
-  console.log(recipes);
   form.submit.disabled = false;
   displayRecipes(recipes.results);
 }
 
 function displayRecipes(recipes) {
-  console.log("Creating HTML");
   const html = recipes.map(
     (recipe) =>
       `<div class="recipe">
